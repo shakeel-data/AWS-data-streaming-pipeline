@@ -1,1 +1,1 @@
-# aws-etl-pipeline-redshift-glue-hudi
+# AWS-kafka-streaming-pipeline-rds-s3
