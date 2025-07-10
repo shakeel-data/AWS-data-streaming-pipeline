@@ -1,1 +1,1 @@
-# AWS-kafka-streaming-pipeline-rds-s3
+# Real-Time Data Streaming Pipeline on AWS using Apache Kafka
