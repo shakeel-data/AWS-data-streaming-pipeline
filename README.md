@@ -49,8 +49,8 @@ Sync Connectors: Consume data from Kafka topics and deliver it to destination sy
 
 ### 4. Verification
 - To verify data streaming, you can set up an EC2 instance, install Kafka clients, and consume messages directly from the Kafka topic created by the source connector.
-Attach an IAM role to the EC2 instance with permissions to consume from the MSK cluster. s s
-Verify data landing in the target S3 bucket. The S3 sync connector will write files to S3, typically organized by topic and partition. s
+Attach an IAM role to the EC2 instance with permissions to consume from the MSK cluster.
+Verify data landing in the target S3 bucket. The S3 sync connector will write files to S3, typically organized by topic and partition.
 Make changes (e.g., delete a record) in the source database and observe the corresponding change records appearing in the S3 bucket in near real-time, confirming the pipeline is working. 
 
 
