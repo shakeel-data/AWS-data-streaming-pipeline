@@ -58,7 +58,7 @@ It serves as a hands-on example of architecting scalable, event-driven pipelines
 - **CDC Integration with Debezium:** Enabled Change Data Capture (CDC) on the source database, allowing the system to capture and stream only the change events (insert/update/delete) efficiently.
 - **Fully Managed Kafka Architecture:** Leveraged AWS MSK and MSK Connect for managed Kafka and connector services, eliminating the need to manage Kafka infrastructure manually.
 - **Secure and Scalable Design:** Ensured data flow through private subnets using VPC endpoints, IAM-based authentication, and fine-grained access controls for secure data movement.
-- Real-Time Verification and Monitoring: Successfully verified streaming via Kafka consumer on EC2 and observed structured output in S3, confirming full pipeline functionality.
+- **Real-Time Verification and Monitoring:** Successfully verified streaming via Kafka consumer on EC2 and observed structured output in S3, confirming full pipeline functionality.
 
 ## ☁️ Technologies and Tools
 - Amazon RDS (SQL Server) – For hosting the source transactional database with Change Data Capture (CDC) enabled.
