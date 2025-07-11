@@ -13,10 +13,10 @@ It serves as a hands-on example of architecting scalable, event-driven pipelines
 - Kafka Connect is a framework or service for connecting Kafka with external systems like databases, key-value stores, search indexes, and file systems.
 - It simplifies integration by providing pre-built, reusable connectors (plugins) that handle the logic of getting data into or out of Kafka.
 - Install a plugin within Kafka Connect and then create a connector instance from that plugin.
+- There are two types of connectors:
+  - Source Connectors: Produce data from source systems (like databases) into Kafka topics. They act like producers.
+  - Sync Connectors: Consume data from Kafka topics and deliver it to destination systems (like S3, Snowflake). They act like consumers
 
-There are two types of connectors:
-Source Connectors: Produce data from source systems (like databases) into Kafka topics. They act like producers.
-Sync Connectors: Consume data from Kafka topics and deliver it to destination systems (like S3, Snowflake). They act like consumers
 | **Connector Type** | **Function**                                 | **Direction (Relative to Kafka)** | **Example in Pipeline**       |
 | ------------------ | -------------------------------------------- | --------------------------------- | ----------------------------- |
 | Source             | Pulls data from a system into Kafka          | Inward                            | Debezium SQL Server Connector |
