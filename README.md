@@ -60,7 +60,17 @@ Sync Connectors: Consume data from Kafka topics and deliver it to destination sy
 - Secure and Scalable Design: Ensured data flow through private subnets using VPC endpoints, IAM-based authentication, and fine-grained access controls for secure data movement.
 - Real-Time Verification and Monitoring: Successfully verified streaming via Kafka consumer on EC2 and observed structured output in S3, confirming full pipeline functionality.
 
-
+## ☁️ Technologies and Tools Used
+- Amazon RDS (SQL Server) – For hosting the source transactional database with Change Data Capture (CDC) enabled.
+- Amazon S3 – Destination data lake to store the streamed data in structured formats.
+- Amazon MSK (Managed Streaming for Kafka) – Fully managed Apache Kafka service to handle real-time data streaming.
+- MSK Connect – For deploying Debezium Source Connector and S3 Sink Connector to move data between RDS and S3.
+- Apache Kafka – Backbone of the streaming pipeline for reliable message brokering.
+- Debezium (SQL Server Source Connector) – To capture change events (CDC) from the SQL Server database.
+- Amazon EC2 – Used to run Kafka CLI tools for consumer testing and verification.
+- IAM (Identity and Access Management) – To assign roles and policies securely across services.
+- VPC & VPC Endpoints – For private, secure communication between services like MSK and S3 without internet access.
+- DBeaver – SQL client for database management and table creation.
 
 
 
