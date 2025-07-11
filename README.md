@@ -8,14 +8,14 @@ This project demonstrates how to build a real-time data streaming pipeline using
 It serves as a hands-on example of architecting scalable, event-driven pipelines using fully managed services in the AWS ecosystem, **suitable for modern data engineering and streaming analytics applications.**
 
 ## 🎯 Key Objectives
-- Apache Kafka involves topics where producers write data and consumers read data.
-- Producers are applications writing data to Kafka topics, and Consumers are applications reading data from topics.
-- Kafka Connect is a framework or service for connecting Kafka with external systems like databases, key-value stores, search indexes, and file systems.
-- It simplifies integration by providing pre-built, reusable connectors (plugins) that handle the logic of getting data into or out of Kafka.
-- Install a plugin within Kafka Connect and then create a connector instance from that plugin.
+- Apache Kafka involves topics where **producers write data and consumers read data.**
+- Producers are applications writing data to **Kafka topics, and Consumers are applications reading data from topics.**
+- Kafka Connect is a framework or service for connecting Kafka with **external systems like databases, key-value stores, search indexes, and file systems.**
+- It simplifies integration by providing **pre-built, reusable connectors (plugins)** that handle the logic of getting data into or out of Kafka.
+- **Install a plugin within Kafka Connect** and then create a connector instance from that plugin.
 - There are two types of connectors:
-  - Source Connectors: Produce data from source systems (like databases) into Kafka topics. They act like producers.
-  - Sync Connectors: Consume data from Kafka topics and deliver it to destination systems (like S3, Snowflake). They act like consumers
+  - **Source Connectors:** Produce data from source systems (like databases) into **Kafka topics**. They act like producers.
+  - **Sync Connectors:** Consume data from Kafka topics and deliver it to destination systems **(like S3, Snowflake)**. They act like consumers
 
 | **Connector Type** | **Function**                                 | **Direction (Relative to Kafka)** | **Example in Pipeline**       |
 | ------------------ | -------------------------------------------- | --------------------------------- | ----------------------------- |
