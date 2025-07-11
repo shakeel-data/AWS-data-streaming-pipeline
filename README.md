@@ -73,7 +73,7 @@ It serves as a hands-on example of architecting scalable, event-driven pipelines
 - **DBeaver** – SQL client for database management and table creation.
 
 ## ✅🔄 Conclusion & Next Steps
-This project demonstrates the successful creation of a real-time data streaming pipeline using AWS services and open-source technologies like Apache Kafka and Debezium. We showcased how change data capture (CDC) events from a SQL Server database hosted on Amazon RDS can be captured and streamed into Amazon S3 through an Apache Kafka topic managed by Amazon MSK and MSK Connect. This pipeline enables near real-time data ingestion, making it highly suitable for use cases like data lakes, analytics, reporting, or backup systems. By decoupling the source (RDS) and the destination (S3), it allows for scalability, fault tolerance, and flexibility in enterprise data architectures.
+This project demonstrates the successful creation of a real-time data streaming pipeline using AWS services and open-source technologies like **Apache Kafka and Debezium.** We showcased how change data capture **(CDC)** events from a SQL Server database hosted on **Amazon RDS** can be captured and streamed into Amazon S3 through an Apache Kafka topic managed by Amazon MSK and MSK Connect. **This pipeline enables near real-time data ingestion, making it highly suitable for use cases like data lakes, analytics, reporting, or backup systems.** By decoupling the source **(RDS)** and the destination **(S3)**, it allows for **scalability, fault tolerance,** and **flexibility** in enterprise data architectures.
 This helped build a strong understanding of how to **design, configure, and troubleshoot a cloud-native streaming architecture using AWS.**
 
 ### 📌 Key Takeaways:
