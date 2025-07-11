@@ -5,6 +5,7 @@ A Data Streaming Pipeline in **AWS** enables the real-time processing and moveme
 
 ## 📘 Project Overview
 This project demonstrates how to build a real-time data streaming pipeline using Apache Kafka and AWS managed services. It captures real-time changes from a Microsoft SQL Server database hosted on Amazon RDS, streams the data through **AWS MSK (Managed Streaming for Apache Kafka)** using Debezium's MSSQL source connector, and delivers the processed data to Amazon S3 using an S3 Sink Connector. By implementing **Change Data Capture (CDC)**, the pipeline ensures that every insert, update, or delete in the source database is continuously streamed and stored in S3, making it ideal for **real-time analytics, data lakes, or downstream processing**.
+
 This project highlights practical skills in setting up **MSK clusters, managing IAM roles, configuring Kafka connectors**, and ensuring secure and scalable data flow between services.
 It serves as a hands-on example of architecting scalable, event-driven pipelines using fully managed services in the AWS ecosystem, **suitable for modern data engineering and streaming analytics applications.**
 
