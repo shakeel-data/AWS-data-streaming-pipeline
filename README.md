@@ -61,16 +61,16 @@ It serves as a hands-on example of architecting scalable, event-driven pipelines
 - **Real-Time Verification and Monitoring:** Successfully verified streaming via Kafka consumer on EC2 and observed structured output in S3, confirming full pipeline functionality.
 
 ## ☁️ Technologies and Tools
-- Amazon RDS (SQL Server) – For hosting the source transactional database with Change Data Capture (CDC) enabled.
-- Amazon S3 – Destination data lake to store the streamed data in structured formats.
-- Amazon MSK (Managed Streaming for Kafka) – Fully managed Apache Kafka service to handle real-time data streaming.
-- MSK Connect – For deploying Debezium Source Connector and S3 Sink Connector to move data between RDS and S3.
-- Apache Kafka – Backbone of the streaming pipeline for reliable message brokering.
-- Debezium (SQL Server Source Connector) – To capture change events (CDC) from the SQL Server database.
-- Amazon EC2 – Used to run Kafka CLI tools for consumer testing and verification.
-- IAM (Identity and Access Management) – To assign roles and policies securely across services.
-- VPC & VPC Endpoints – For private, secure communication between services like MSK and S3 without internet access.
-- DBeaver – SQL client for database management and table creation.
+- **Amazon RDS (SQL Server)** – For hosting the source transactional database with Change Data Capture (CDC) enabled.
+- **Amazon S3** – Destination data lake to store the streamed data in structured formats.
+- **Amazon MSK (Managed Streaming for Kafka)** – Fully managed Apache Kafka service to handle real-time data streaming.
+- **MSK Connect** – For deploying Debezium Source Connector and S3 Sink Connector to move data between RDS and S3.
+- **Apache Kafka** – Backbone of the streaming pipeline for reliable message brokering.
+- **Debezium (SQL Server Source Connector)** – To capture change events (CDC) from the SQL Server database.
+- **Amazon EC2** – Used to run Kafka CLI tools for consumer testing and verification.
+- **IAM (Identity and Access Management)** – To assign roles and policies securely across services.
+- **VPC & VPC Endpoints** – For private, secure communication between services like MSK and S3 without internet access.
+- **DBeaver** – SQL client for database management and table creation.
 
 ## ✅🔄 Conclusion & Next Steps
 This project demonstrates the successful creation of a real-time data streaming pipeline using AWS services and open-source technologies like Apache Kafka and Debezium. We showcased how change data capture (CDC) events from a SQL Server database hosted on Amazon RDS can be captured and streamed into Amazon S3 through an Apache Kafka topic managed by Amazon MSK and MSK Connect. This pipeline enables near real-time data ingestion, making it highly suitable for use cases like data lakes, analytics, reporting, or backup systems. By decoupling the source (RDS) and the destination (S3), it allows for scalability, fault tolerance, and flexibility in enterprise data architectures.
