@@ -54,13 +54,13 @@ It serves as a hands-on example of architecting scalable, event-driven pipelines
 - Make changes (e.g., delete a record) in the source database and observe the corresponding change records appearing in the S3 bucket in near real-time, confirming the pipeline is working. 
 
 ## 🌟 Highlights and Key Insights
-- End-to-End Real-Time Streaming: Achieved near real-time data ingestion from an Amazon RDS SQL Server database to Amazon S3 using Apache Kafka and MSK Connect.
-- CDC Integration with Debezium: Enabled Change Data Capture (CDC) on the source database, allowing the system to capture and stream only the change events (insert/update/delete) efficiently.
-- Fully Managed Kafka Architecture: Leveraged AWS MSK and MSK Connect for managed Kafka and connector services, eliminating the need to manage Kafka infrastructure manually.
-- Secure and Scalable Design: Ensured data flow through private subnets using VPC endpoints, IAM-based authentication, and fine-grained access controls for secure data movement.
+- **End-to-End Real-Time Streaming:** Achieved near real-time data ingestion from an Amazon RDS SQL Server database to Amazon S3 using Apache Kafka and MSK Connect.
+- **CDC Integration with Debezium:** Enabled Change Data Capture (CDC) on the source database, allowing the system to capture and stream only the change events (insert/update/delete) efficiently.
+- **Fully Managed Kafka Architecture:** Leveraged AWS MSK and MSK Connect for managed Kafka and connector services, eliminating the need to manage Kafka infrastructure manually.
+- **Secure and Scalable Design:** Ensured data flow through private subnets using VPC endpoints, IAM-based authentication, and fine-grained access controls for secure data movement.
 - Real-Time Verification and Monitoring: Successfully verified streaming via Kafka consumer on EC2 and observed structured output in S3, confirming full pipeline functionality.
 
-## ☁️ Technologies and Tools Used
+## ☁️ Technologies and Tools
 - Amazon RDS (SQL Server) – For hosting the source transactional database with Change Data Capture (CDC) enabled.
 - Amazon S3 – Destination data lake to store the streamed data in structured formats.
 - Amazon MSK (Managed Streaming for Kafka) – Fully managed Apache Kafka service to handle real-time data streaming.
