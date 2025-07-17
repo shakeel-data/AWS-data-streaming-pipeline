@@ -1,0 +1,9 @@
+{
+  "name": "s3-sink-connector",
+  "connector.class": "io.confluent.connect.s3.S3SinkConnector",
+  "topics": "orders-topic",
+  "s3.bucket.name": "data-streaming-pipeline",
+  "format.class": "io.confluent.connect.s3.format.json.JsonFormat",
+  "storage.class": "io.confluent.connect.s3.storage.S3Storage",
+  "tasks.max": "1"
+}
