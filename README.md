@@ -38,7 +38,7 @@ It serves as a hands-on example of architecting scalable, event-driven pipelines
 - Enable IAM role-based authentication for the cluster.
 - A Kafka topic is needed for the data stream. The source connector can automatically create the topic if configured to do so, following a pattern like `database.schema.table`
 
-### 3. Setting up Connectors in MSK Connect
+### 3. Setting Up Connectors in MSK Connect
 - Create an IAM role for the connectors with permissions to connect to the MSK cluster and access S3.
 - Download the connector plugins (e.g., Debezium SQL Server, Amazon S3 Sink) as ZIP files.
 - Upload the connector plugin ZIP files to an S3 bucket.
