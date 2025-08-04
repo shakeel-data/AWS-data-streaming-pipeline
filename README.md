@@ -85,5 +85,5 @@ This helped build a strong understanding of how to **design, configure, and trou
 
 ### 🚀 What’s Next:
 - Add ETL/ELT logic using **AWS Glue, Kinesis, or Lambda** for real-time transformation.
-- Query S3-stored data using **Amazon Athena** and visualize results with QuickSight.
+- Query S3-stored data using **Amazon Athena** and visualize results with **QuickSight**.
 - Explore schema **registry, error handling, and DLQs** (Dead Letter Queues) for production-grade pipelines.
