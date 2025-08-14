@@ -70,7 +70,7 @@ It serves as a hands-on example of architecting scalable, event-driven pipelines
 - **Apache Kafka** – Backbone of the streaming pipeline for reliable message brokering.
 - **Debezium (SQL Server Source Connector)** – To capture change events (CDC) from the SQL Server database.
 - **Amazon EC2** – Used to run Kafka CLI tools for consumer testing and verification.
-- **IAM (Identity and Access Management)** – To assign roles and policies securely across services.
+- **IAM (Identity and Access Management)** – To assign roles and policies securely across services. 
 - **VPC & VPC Endpoints** – For private, secure communication between services like MSK and S3 without internet access.
 - **DBeaver** – SQL client for database management and table creation.
 
