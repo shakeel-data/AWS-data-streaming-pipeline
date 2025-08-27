@@ -62,7 +62,7 @@ It serves as a hands-on example of architecting scalable, event-driven pipelines
 - **Secure and Scalable Design:** Ensured data flow through private subnets using VPC endpoints, IAM-based authentication, and fine-grained access controls for secure data movement.
 - **Real-Time Verification and Monitoring:** Successfully verified streaming via Kafka consumer on EC2 and observed structured output in S3, confirming full pipeline functionality.
 
-## ☁️ Technologies and Tools
+## ☁️ Tools and Technologies
 - **Amazon RDS (SQL Server)** – For hosting the source transactional database with Change Data Capture (CDC) enabled.
 - **Amazon S3** – Destination data lake to store the streamed data in structured formats.
 - **Amazon MSK (Managed Streaming for Kafka)** – Fully managed Apache Kafka service to handle real-time data streaming.
